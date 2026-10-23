@@ -1,0 +1,23 @@
+:root { --green: #256b43; --deep: #143b28; --cream: #f5f8ee; }
+body { color: #26372c; background: #fffdf9; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; }
+h1, h2, h3 { color: var(--deep); }
+a { color: var(--green); }
+.site-header { background: #ffffff; }
+.site-header .navbar-brand { color: var(--deep); font-size: 1.45rem; }
+.site-header .nav-link { color: #344b3d; }
+.site-header .nav-link.active { color: var(--green); font-weight: 700; }
+.hero { background: linear-gradient(110deg, #eef5e3, #dceecd); }
+.eyebrow { color: var(--green); font-weight: 700; letter-spacing: .14em; font-size: .8rem; }
+.hero-mark { font-size: clamp(6rem, 15vw, 12rem); filter: drop-shadow(0 18px 15px #315d452e); }
+.product-card { transition: transform .15s ease; overflow: hidden; }
+.product-card:hover { transform: translateY(-3px); }
+.product-img { aspect-ratio: 4 / 3; object-fit: cover; }
+.detail-image { width: 100%; max-height: 460px; object-fit: cover; }
+.form-panel { padding: 1.5rem; border: 1px solid #e3eadf; border-radius: 1rem; background: white; max-width: 630px; }
+.soft-block { background: var(--cream); }
+.site-footer { background: var(--deep); color: white; }
+.btn-success { --bs-btn-bg: #256b43; --bs-btn-border-color: #256b43; --bs-btn-hover-bg: #174b30; --bs-btn-hover-border-color: #174b30; }
+@media (max-width: 575px) { .hero { text-align: center; } .hero-mark { display: block; margin-top: 1rem; } .form-panel { padding: 1rem; } }
+
+.list-group-item.active { background-color: var(--green); border-color: var(--green); }
+@media print { .site-header, .site-footer, .btn { display: none !important; } body { background: white; } }
